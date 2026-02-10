@@ -1,23 +1,23 @@
 import sys
 a = float(input('number?:'))
-b = int(input('1(+)2(-)3(*)4(/)?:'))
-if b>4 or b<1:
-    print(f'error404 {b} is not found')
+b = str(input('operator?(+, -, *, /):'))
+if b not in ['+', '-', '*', '/']:
+    print("error {} is not supported".format(b))
     sys.exit()
 c = float(input('number?:'))
-if b==1:
+if b=='+':
     result = a + c
     print(result)
     print(f'{a} + {c} = {result}')
-elif b==2:
+elif b=='-':
     result = a - c
     print(result)
     print(f'{a} - {c} = {result}')
-elif b==3:
+elif b=='*':
     result = a * c
     print(result)
     print(f'{a} * {c} = {result}')
-elif b==4:
+elif b=='/':
     if c==0:
         print(f"error {a} / {c} is Can't calculate")
         sys.exit()
