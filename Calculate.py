@@ -13,25 +13,25 @@
 #You should have received a copy of the GNU Affero General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import sys
-a = float(input('number?:'))
-b = str(input('operator?(+, -, *, /):'))
-if b not in ['+', '-', '*', '/']:
+firstnumber = float(input('number?:'))
+enzansiki = str(input('operator?(+, -, *, /):'))
+if enzansiki not in ['+', '-', '*', '/']:
     print("error {} is not supported".format(b))
     sys.exit()
-c = float(input('number?:'))
-if b=='+':
+lastnumber = float(input('number?:'))
+if enzansiki=='+':
     result = a + c
     print(result)
     print(f'{a} + {c} = {result}')
-elif b=='-':
+elif enzansiki=='-':
     result = a - c
     print(result)
     print(f'{a} - {c} = {result}')
-elif b=='*':
+elif enzansiki=='*':
     result = a * c
     print(result)
     print(f'{a} * {c} = {result}')
-elif b=='/':
+elif enzansiki=='/':
     if c==0:
         print(f"error {a} / {c} is Can't calculate")
         sys.exit()
