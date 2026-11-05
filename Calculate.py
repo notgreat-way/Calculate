@@ -6,21 +6,13 @@ if enzansiki not in ['+', '-', '*', '/']:
     sys.exit()
 lastnumber = float(input('number?:'))
 if enzansiki=='+':
-    result = firstnumber + lastnumber
-    print(result)
-    print(f'{firstnumber} + {lastnumber} = {result}')
+    print(f'{firstnumber} + {lastnumber} = {firstnumber + lastnumber}')
 elif enzansiki=='-':
-    result = firstnumber - lastnumber
-    print(result)
-    print(f'{firstnumber} - {lastnumber} = {result}')
+    print(f'{firstnumber} - {lastnumber} = {firstnumber - lastnumber}')
 elif enzansiki=='*':
-    result = firstnumber * lastnumber
-    print(result)
-    print(f'{firstnumber} * {lastnumber} = {result}')
+    print(f'{firstnumber} * {lastnumber} = {firstnumber * lastnumber}')
 elif enzansiki=='/':
     if lastnumber==0:
         print(f"error {firstnumber} / {lastnumber} is Can't calculate")
         sys.exit()
-    result = firstnumber / lastnumber
-    print(result)
-    print(f'{a} / {c} = {result}')
+    print(f'{firstnumber} / {lastnumber} = {firstnumber / lastnumber}')
