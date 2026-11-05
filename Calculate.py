@@ -8,18 +8,18 @@ lastnumber = float(input('number?:'))
 if enzansiki=='+':
     result = firstnumber + lastnumber
     print(result)
-    print(f'{a} + {c} = {result}')
+    print(f'{firstnumber} + {lastnumber} = {result}')
 elif enzansiki=='-':
     result = firstnumber - lastnumber
     print(result)
-    print(f'{a} - {c} = {result}')
+    print(f'{firstnumber} - {lastnumber} = {result}')
 elif enzansiki=='*':
     result = firstnumber * lastnumber
     print(result)
-    print(f'{a} * {c} = {result}')
+    print(f'{firstnumber} * {lastnumber} = {result}')
 elif enzansiki=='/':
-    if c==0:
-        print(f"error {a} / {c} is Can't calculate")
+    if lastnumber==0:
+        print(f"error {firstnumber} / {lastnumber} is Can't calculate")
         sys.exit()
     result = firstnumber / lastnumber
     print(result)
