@@ -2,7 +2,7 @@ import sys
 firstnumber = float(input('number?:'))
 enzansiki = str(input('operator?(+, -, *, /):'))
 if enzansiki not in ['+', '-', '*', '/']:
-    print("error {} is not supported".format(b))
+    print("error {} is not supported".format(enzansiki))
     sys.exit()
 lastnumber = float(input('number?:'))
 if enzansiki=='+':
